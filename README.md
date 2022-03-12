@@ -40,7 +40,7 @@ console.log(a); // [ [ 100, 200 ], [ 3, 4 ] ]
 ## Functions
 1. Named function
 ```js
-function someName(params) {
+function someName(...params) {
     // body
     return params; // optional (without return undefined)
 }
@@ -55,7 +55,7 @@ const name2 = function (...params) {
 ```
 3. Arrow function
 ```js
-const name3 = (...params) => {
+const name3 = (params) => {
     return params;
 };
 ```
@@ -90,7 +90,7 @@ const name3 = (...params) => {
 15.  `[1, 2, 3].map(x => x * 2)` - map (return new array with elements transformed by callback) - transform array
 16.  `[1, 2, 3].filter(x => x > 1)` - filter (returns new array filtered by callback) - delete elements
 17. `[1, 2, 3].reduce((acc, cur) => acc + cur)` - reduce (returns single value) - sum - aggregate array
-18. `[1, 2, 3].reduceRight((acc, cur) => acc + cur)' - reduceRight (returns single value) - sum - aggregate array
+18. `[1, 2, 3].reduceRight((acc, cur) => acc + cur)` - reduceRight (returns single value) - sum - aggregate array
 19. `[1, 2, 3].forEach(x => console.log(x))` - forEach (returns undefined) - iterate array
 20. `[1, 2, 3].some(x => x > 1)` - some (returns true or false) - test if any element passes test
 21. `[1, 2, 3].every(x => x > 1)` - every (returns true or false) - test if all elements pass test

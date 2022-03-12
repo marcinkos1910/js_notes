@@ -102,7 +102,7 @@
 
 // Named fn
 
-function someName(params) {
+function someName(...params) {
     // body
     return params; // optional (without return undefined)
 }
@@ -119,7 +119,7 @@ setTimeout(function (){}, 0);
 
 // Arrow fn
 
-const name3 = (...params) => {
+const name3 = (params) => {
     return params;
 };
 
