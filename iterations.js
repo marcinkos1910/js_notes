@@ -8,7 +8,8 @@
 //     return item * id;
 // };
 
-// const result = data.map(fn)
+// // const result = data.map(fn)
+// const result = data.map((item, id) => item * id)
 // console.log(result);
 
 // // Make boolean from data
